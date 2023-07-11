@@ -1,0 +1,10 @@
+networkx
+scikit-learn
+seaborn
+imbalanced-learn
+scipy>=1.9
+pandas
+pickledb
+pylibmc
+tqdm
+click

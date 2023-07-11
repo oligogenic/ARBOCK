@@ -1,0 +1,7 @@
+*
+
+!ds_model_no_pheno
+!ds_model_with_pheno
+!analytics
+!article_predictions
+!.gitignore
