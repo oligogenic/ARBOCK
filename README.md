@@ -59,9 +59,9 @@ python setup.py install
 
 ## Reproducing the pathogenic gene interaction prediction study
 
-The Python notebook `analyses.ipynb` provides a step-by-step guide to reproduce the tables and plots of the paper.
+The Python notebook [analyses.ipynb](analyses.ipynb) provides a step-by-step guide to reproduce the tables and plots of the paper.
 
-The `arbock.py` is the entry point (CLI) to reproduce the major tasks of the method, and propose different actions via:
+The [arbock.py](arbock.py) is the entry point (CLI) to reproduce the major tasks of the method, and propose different actions via:
 
 ```
 python arbock.py <predict | train | test | explain | evaluate>
@@ -70,8 +70,8 @@ python arbock.py <predict | train | test | explain | evaluate>
 Different arguments can be provided based on the action.
 
 Default values for these arguments are set up in:
-- `src/config/params.py` for parameters, with a custom `config/params.json` that can be created
-- `src/config/paths.py` for paths, with a custom `config/paths.json` that can be created
+- [arbock/config/params.py](arbock/config/params.py) for parameters, with a custom `config/params.json` that can be created
+- [arbock/config/paths.py](arbock/config/paths.py) for paths, with a custom `config/paths.json` that can be created
 
 The creation of the `.json` files avoids the use of very long command line.
 You can simply follow the key-value dictionary structure to set a default value for each parameter / path.
@@ -93,7 +93,7 @@ You can simply follow the key-value dictionary structure to set a default value 
 ### Train / Test datasets:
 - **Positive set**: automatically retrieved from the KG by selecting pairs with a min. a weak evidence level
   * Test set: a given number of pairs (via option: `--holdout_positive_size`) retrieved automatically from most recent publications to oldest + non-overlapping constraint
-- **Negative set**: provided as an external file: `datasets/neutrals_1KGP_100x.tsv`.
+- **Negative set**: provided as an external file: [datasets/neutrals_1KGP_100x.tsv](datasets/neutrals_1KGP_100x.tsv).
 
 ## Predictor actions in detail
 
@@ -249,12 +249,12 @@ Finally, you need to indicate to Spark which `python path` to use. You want it t
 You can find this path here: `</path/to/anaconda>/envs/<env>/bin/python`
 Where `<path/to/anaconda>` should be replaced by the root folder of anaconda / miniconda.
 
-Inside this project `config/spark_config.py`, update the variables `local_driver_location` / `yarn_driver_location` with this path.
+Inside this project [arbock/config/spark_config.py](arbock/config/spark_config.py), update the variables `local_driver_location` / `yarn_driver_location` with this path.
 If you use a HPC infrastructure with Yarn, check that all worker have access to the path you indicates.
 
 ### 7) Launch arbock.py commands with Spark on 
 
-For all commands of `arbock.py`, use the option `--spark_mode <mode>`.
+For all commands of [arbock.py](arbock.py), use the option `--spark_mode <mode>`.
 The mode can be:
 - `local`: will use a locally installed Spark dispatching the processing over multiple threads
 - `yarn`: will distribute the processing on the Yarn cluster resources.
