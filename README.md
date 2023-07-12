@@ -3,7 +3,7 @@
 ARBOCK (Association Rule learning Based on Overlapping Connections in Knowledge graphs) is an interpretable link prediction framework specifically designed for biological knowledge graphs (KGs).
 It can leverage complex connectivity patterns between pairs of entities to make predictions that can be interpreted by highlighting relevant KG paths.
 
-The motivation for developing this approach was to identify pathogenic gene interactions while providing explanations geneticists could understand, validate and use for formulating hypotheses on causal mechanisms behind diseases.
+The motivation for developing this approach was to identify pathogenic gene interactions while providing explanations geneticists could understand, validate and use for formulating hypotheses on causal mechanisms behind oligogenic diseases.
 Therefore, ARBOCK encompasses both this original application (reproducible by following the instructions below) and the framework itself provided as an open-source project for potential new applications.
 
 ## Scope of the method
