@@ -10,7 +10,7 @@ Therefore, ARBOCK encompasses both this original application (reproducible by fo
 
 The methodology was designed with the following requirements in mind:
 - Leveraging heterogenous graph data (different node and edge types) and, optionally, edge weights if defined;
-- Emphasizing connectivity patterns, i.e., path types, between entity pairs as the primary features ;
+- Emphasizing connectivity patterns, i.e., path types, between entity pairs as sole features ;
 - Mining patterns exclusively based on positive examples and predicting links based on these patterns ;
 - Handling significant class imbalance using a limited number of positive examples ;
 - Providing explainable results with a manageable number of paths proposed as explanations.
