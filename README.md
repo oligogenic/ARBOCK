@@ -1,5 +1,7 @@
 # ARBOCK - A rule-based classifier based on KG paths: application in pathogenic gene interaction prediction 
 
+Author: Alexandre Renaux (ULB / VUB).
+
 ARBOCK (Association Rule learning Based on Overlapping Connections in Knowledge graphs) is an interpretable link prediction framework specifically designed for biological knowledge graphs (KGs).
 It can leverage complex connectivity patterns between pairs of entities to make predictions that can be interpreted by highlighting relevant KG paths.
 
